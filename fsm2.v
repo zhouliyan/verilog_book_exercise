@@ -5,9 +5,9 @@ output 			K2,K1;
 reg 			K2,K1;
 reg		[3:0] 	state;
 
-parameter 	Idle = 	4'b1000;	//有变化
-			Start = 4'b0100;
-			Stop = 	4'b0010;
+parameter 	Idle = 	4'b1000,	//有变化
+			Start = 4'b0100,
+			Stop = 	4'b0010,
 			Clear = 4'b0001;
 			
 always@(posedge Clock)begin
